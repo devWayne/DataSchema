@@ -1,11 +1,10 @@
-var parse = require('./lib/parse');
+var Parse = require('./lib/parse');
 
 function DataSchema(){
-
 }
 
+DataSchema.parse=Parse.parse;
 
-
-module.export = {
+module.exports = {
     DataSchema: DataSchema
 }

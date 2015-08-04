@@ -1,7 +1,22 @@
 <html>
 <body>
 <h2>Hello World!</h2>
+<script src="../dataschema.js"></script>
 <script>
+var mockData ={
+	a:'i am a string',
+	b:200,
+	c:{
+		c1:'string in obj',
+		c2:false,
+		c3:{
+		    c31:'still a string'
+		}
+	}
+}
+
+var parsedObj = DataSchema.parse(mockData);
+console.log(parsedObj);
 </script>
 </body>
 </html>
